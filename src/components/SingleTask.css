@@ -1,0 +1,161 @@
+.singleTask {
+  margin-left: 23px;
+  padding-top: 6px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  background: url("./imgs/uncheck.png") no-repeat;
+  background-size: 100%;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  padding: 0;
+}
+input[type="checkbox"]:checked + label {
+  background: url("./imgs/check.png") no-repeat;
+  background-size: 100%;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  padding: 0;
+}
+
+.button {
+  margin: 8px;
+  height: 5vh;
+}
+
+.btnContainer {
+  flex: 0.5;
+  position: absolute;
+  right: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.taskName {
+  flex: 0.5;
+  padding-top: 7px;
+  font-family: "Architects Daughter", cursive;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/*TASKNAME EDIT CONTAINER*/
+.taskNameEditContainer {
+  position: relative;
+}
+
+.taskNameEditInput {
+  font-weight: 600;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  font-family: "Architects Daughter", cursive;
+  text-transform: uppercase;
+}
+
+.taskNameEditInput:focus {
+  outline: none;
+}
+
+.taskNameEditBtnOk {
+  font-family: "Architects Daughter", cursive;
+  color: rgb(53, 53, 53);
+  font-weight: 600;
+  background-color: #afff8d;
+  border-radius: 50px;
+  border: 0px;
+  padding: 6px 10px 6px 10px;
+  position: absolute;
+  top: -35px;
+  left: 60px;
+}
+.taskNameEditBtnX {
+  font-family: "Architects Daughter", cursive;
+  color: rgb(53, 53, 53);
+  font-weight: 600;
+  background-color: #ffa494;
+  border-radius: 50px;
+  border: 0px;
+  padding: 6px 10px 6px 10px;
+  position: absolute;
+  top: -35px;
+  left: -10px;
+}
+
+/*COLOR BUTTONS AND CONTAINER*/
+.colorContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 0px 8px 0px 8px;
+  position: relative;
+}
+
+.colorBtnX {
+  font-family: "Architects Daughter", cursive;
+  color: rgb(53, 53, 53);
+  font-weight: 600;
+  background-color: #ffa494;
+  border-radius: 50px;
+  border: 0px;
+  padding: 6px 8px 6px 8px;
+  position: absolute;
+  top: -15px;
+  right: -20px;
+}
+
+.colorBtnPink {
+  border-color: black;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  background-color: #f1beff;
+  margin-bottom: 10px;
+}
+.colorBtnGreen {
+  border-color: black;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  background-color: #afff8d;
+  margin-bottom: 10px;
+}
+.colorBtnYellow {
+  border-color: black;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  background-color: #fff78b;
+  margin-bottom: 10px;
+}
+.colorBtnSalmon {
+  border-color: black;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  background-color: #fbc8bf;
+  margin-bottom: 10px;
+}
+.colorBtnWhite {
+  border-color: black;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
